@@ -22,7 +22,7 @@ ___________
 7. Show your regression model’s score.
 8. Draw at least three conclusions from your regression model.
 Questions to draw conclusions:  
-- How does residual sugar affect sensory rating (1-10) of quality of wine?
+- How does residual sugar affect % alcohol of wine?
 - How does % alcohol factor into sensory rating (1-10) of quality of wine?
 - How does citric acid ("freshness") correlate to sensory rating (1-10) of quality of wine?
 - How does volatile acid ("vinegar") correlate to sensory rating (1-10) of quality of wine?
@@ -72,3 +72,24 @@ Input variables (based on physicochemical tests):
 
 Citation:
 P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
+
+_________
+
+## Dataset Normalization (kind of)
+
+__________
+
+```
+df = pd.DataFrame(np.random.randn(100, 3))
+
+from scipy import stats
+df[(np.abs(stats.zscore(df)) < 3).all(axis=1)]
+
+```
+
+description of process to detect and exclude outliers (3) std from [Stack Overflow](https://stackoverflow.com/questions/23199796/detect-and-exclude-outliers-in-pandas-data-frame):
+
+- For each column, first it computes the Z-score of each value in the column, relative to the column mean and standard deviation.
+- Then is takes the absolute of Z-score because the direction does not matter, only if it is below the threshold.
+- all(axis=1) ensures that for each row, all column satisfy the constraint.
+- Finally, result of this condition is used to index the dataframe.
