@@ -3,7 +3,7 @@
 - From Kaggle [wine quality factors](https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009)
 
 
-Submission pull request: https://github.com/kimmyd70/linear-regression/pull/1
+Submission pull request: https://github.com/kimmyd70/linear-regression
 
 ## Description
 ___________
