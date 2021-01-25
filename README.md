@@ -24,7 +24,9 @@ ___________
 Questions to draw conclusions:  
 - How does residual sugar affect % alcohol of wine?
 - How does overall fixed acidity correlate to citric acid ("freshness") in this wine variant?
-- How does the quantity of volatile acid (vinegar or nail polish smells/taste) correlate to sensory rating (1-10) of quality of this wine variant?
+- How does the density correlate to the % alcohol in this wine variant? 
+ 
+    - See this article on the relationship of [% alcohol related to wine density] (https://www.wardsci.com/www.wardsci.com/images/Chemistry_of_Wine.pdf)
 ______________
 
 ## Configuration and Technologies
