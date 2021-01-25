@@ -23,9 +23,8 @@ ___________
 8. Draw at least three conclusions from your regression model.
 Questions to draw conclusions:  
 - How does residual sugar affect % alcohol of wine?
-- How does % alcohol factor into sensory rating (1-10) of quality of wine?
-- How does citric acid ("freshness") correlate to sensory rating (1-10) of quality of wine?
-- How does volatile acid ("vinegar") correlate to sensory rating (1-10) of quality of wine?
+- How does overall fixed acidity correlate to citric acid ("freshness") in this wine variant?
+- How does the quantity of volatile acid (vinegar or nail polish smells/taste) correlate to sensory rating (1-10) of quality of this wine variant?
 ______________
 
 ## Configuration and Technologies
@@ -78,6 +77,7 @@ _________
 ## Dataset Normalization (kind of)
 
 __________
+1451 entries after:
 
 ```
 df = pd.DataFrame(np.random.randn(100, 3))
